@@ -1,0 +1,28 @@
+/*
+Theme Name: adisgladis.se
+Template: supernova-theme
+Author: Jakob Nanneson, Tofta Webbyrå
+Author URI: http://toftawebb.se	
+GitHub Theme URI: https://github.com/jensjakob/adisgladis
+Version: 0.0.1
+*/
+
+ul.children {
+    padding-left: 1em;
+}
+.topbar,
+.site-info,
+.single.woocommerce #content .product section#product-description.builder-not-active h2, .single.woocommerce-page #content .product section#product-description.builder-not-active h2,
+a.woocommerce-product-gallery__trigger {
+	display: none;
+}
+#site-navigation .sub-menu .menu-item-has-children a {
+	    font-size: 16px!important;
+}
+#site-navigation .sub-menu .menu-item-has-children .menu-item-object-product_cat a {
+	    font-size: 13px!important;
+}
+.single.woocommerce #content .product section#product-description.builder-not-active h2, .single.woocommerce-page #content .product section#product-description.builder-not-active p {
+	text-align:left;
+	margin-bottom: 1em;
+}
