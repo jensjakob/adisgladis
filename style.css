@@ -4,7 +4,7 @@ Template: supernova-theme
 Author: Jakob Nanneson, Tofta Webbyrå
 Author URI: http://toftawebb.se	
 GitHub Theme URI: https://github.com/jensjakob/adisgladis
-Version: 0.0.2
+Version: 0.0.3
 */
 
 @font-face {
@@ -29,6 +29,17 @@ Version: 0.0.2
 		url('/wp-content/themes/adisgladis/fonts/NoeDisplay-Regular.woff#') format('woff'),
 		url('/wp-content/themes/adisgladis/fonts/NoeDisplay-Regular.ttf#')  format('truetype'),
 		url('/wp-content/themes/adisgladis/fonts/NoeDisplay-Regular.svg#NoeDisplay-Regular') format('svg');
+}
+
+header#header nav#site-navigation .menu-item a {
+    font-family: 'Noe Display Regular', serif!important;
+	color: black;
+	text-transform: none;
+}
+
+.topbar {
+	display: block;
+	text-align: center;
 }
 
 /* clean menu:
@@ -74,11 +85,10 @@ Version: 0.0.2
  ul.children {
 	 padding-left: 1em;
  }
- .topbar,
  .site-info,
  .single.woocommerce #content .product section#product-description.builder-not-active h2, .single.woocommerce-page #content .product section#product-description.builder-not-active h2,
  a.woocommerce-product-gallery__trigger {
-	 display: none;
+	 display: none!important;
  }
  #site-navigation .sub-menu .menu-item-has-children a {
 		 font-size: 16px!important;
