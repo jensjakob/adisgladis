@@ -34,6 +34,9 @@
 				<div class="nav-left navbar-menu mobile">
 					<a href="nav-menu" class="mobile-nav"><i class="fal fa-bars"></i></a>
 				</div>
+				<div class="nav-left navbar-menu desktop">
+					<?php bulmapress_navigation(); ?>
+				</div>
 				<div class="nav-center branding">
 					<?php $custom_logo_id = get_theme_mod( 'custom_logo' );
 					$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
@@ -45,9 +48,6 @@
 						echo '<h1 title="' . get_bloginfo('name') . ' - ' . get_bloginfo('description') . '">'. bulmapress_home_link('nav-item is-brand') .'</h1>';
 						echo '<p>'. bulmapress_blog_description('nav-item is-muted') .'</p>';
 					} ?>
-				</div>
-				<div class="nav-left navbar-menu desktop">
-					<?php bulmapress_navigation(); ?>
 				</div>
                     <?php secondary_navigation(); ?>
 				<div class="nav-shop">
@@ -69,4 +69,3 @@
 			</nav>
 		</header>
 		<div id="content" class="site-content">
-            
