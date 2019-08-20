@@ -1,5 +1,10 @@
 <?php
 
+function load_css_and_js() {
+	wp_enqueue_style( 'style', get_stylesheet_uri() );
+}
+add_action( 'wp_enqueue_scripts', 'load_css_and_js', 1001 );
+
 function child_remove_parent_function() {
 	remove_action( 'woocommerce_archive_description', 'woocommerce_category_image', 0 );
 }
