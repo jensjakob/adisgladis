@@ -1,7 +1,8 @@
 <?php
 
-add_action( 'woocommerce_archive_description', 'woocommerce_category_image', 0 );
-function woocommerce_category_image() {
+remove_action( 'woocommerce_archive_description', 'woocommerce_category_image' );
+add_action( 'woocommerce_archive_description', 'adisgladis_woocommerce_category_image', 0 );
+function adisgladis_woocommerce_category_image() {
 	if ( is_product_category() ){
 		global $wp_query;
 		$cat = $wp_query->get_queried_object();
