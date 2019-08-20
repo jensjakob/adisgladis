@@ -1,6 +1,10 @@
 <?php
 
-remove_action( 'woocommerce_archive_description', 'woocommerce_category_image' );
+function child_remove_parent_function() {
+	remove_action( 'woocommerce_archive_description', 'woocommerce_category_image' );
+}
+add_action( 'wp_loaded', 'child_remove_parent_function' );
+
 add_action( 'woocommerce_archive_description', 'adisgladis_woocommerce_category_image', 0 );
 function adisgladis_woocommerce_category_image() {
 	if ( is_product_category() ){
