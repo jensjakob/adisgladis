@@ -4,7 +4,7 @@ Template: supernova-theme
 Author: Jakob Nanneson, Tofta Webbyrå
 Author URI: http://toftawebb.se	
 GitHub Theme URI: https://github.com/jensjakob/adisgladis
-Version: 0.1.8
+Version: 0.1.9
 */
 
 @font-face {
@@ -31,10 +31,26 @@ Version: 0.1.8
 		url('/wp-content/themes/adisgladis/fonts/NoeDisplay-Regular.svg#NoeDisplay-Regular') format('svg');
 }
 
-header#header nav#site-navigation .menu-item a {
+h1.product_title.entry-title, .content.entry-content h1, h1.title.entry-title, h1.product_title.entry-title a, .content.entry-content h1 a, h1.title.entry-title a,
+header#header nav#site-navigation .menu-item a,
+h1, h2, h3,
+button,
+#nav-menu a
+{
     font-family: 'Noe Display Regular', serif!important;
 	color: black;
 	text-transform: none;
+	font-weight: normal!important;
+}
+
+h4, h5, h6,
+div, p, span,
+header#header nav#site-navigation .sub-menu .menu-item a,
+#nav-menu .sub-menu a
+{
+	font-family: 'Neutral Std Reg', sans-serif!important;
+	text-transform: none;
+	font-weight: normal!important;
 }
 
 .topbar {
@@ -48,9 +64,9 @@ header#header nav#site-navigation .menu-item a {
  * material
  * plastbanta
  * */
- #menu-item-100437835,
- #menu-item-1004381308,
- #menu-item-1004383295 {
+ .menu-item-100437835, 
+ .menu-item-1004381308,
+ .menu-item-1004383295 {
 	 display: none!important;
  }
  /*remove dam herr*/
@@ -91,34 +107,14 @@ header#header nav#site-navigation .menu-item a {
 	 display: none!important;
  }
  #site-navigation .sub-menu .menu-item-has-children a {
-		 font-size: 16px!important;
+		 font-size: 15px;
  }
- #site-navigation .sub-menu .menu-item-has-children .menu-item-object-product_cat a {
-		 font-size: 13px!important;
- }
+
  .single.woocommerce #content .product section#product-description.builder-not-active h2, .single.woocommerce-page #content .product section#product-description.builder-not-active p {
 	 text-align:left;
 	 margin-bottom: 1em;
  }
 
-h1.product_title.entry-title, .content.entry-content h1, h1.title.entry-title, h1.product_title.entry-title a, .content.entry-content h1 a, h1.title.entry-title a,
-header#header nav#site-navigation .menu-item a,
-h1, h2, h3,
-button
-{
-    font-family: 'Noe Display Regular', serif!important;
-	color: black;
-	text-transform: none;
-	font-weight: normal!important;
-}
-
-h4, h5, h6,
-div, p, span
-{
-    font-family: 'Neutral Std Reg', sans-serif!important;
-	text-transform: none;
-	font-weight: normal!important;
-}
 
 button,
 .woocommerce ul.products li.product h2, .woocommerce-page ul.products li.product h2{
@@ -136,9 +132,6 @@ button,
 	text-align: center;
 }
 
-div#nav-menu.mobile-menu h3 {
-	display: none!important;
-}
 div#nav-menu.mobile-menu {
 	text-align: left!important;
 }
@@ -174,4 +167,49 @@ header#header .nav-search.open .woocommerce-product-search input[type="search"] 
 .archive.woocommerce .woocommerce-products-header .category-header h1, .tax-product_cat.woocommerce .woocommerce-products-header .category-header h1 {
 	text-transform: none!important;
 	color: black!important;
+}
+
+header#header nav#site-navigation .sub-menu .sub-menu {
+	display: none!important;
+}
+
+header#header nav#site-navigation .sub-menu .menu-item a {
+font-size: 15px!important;
+font-family: 'Neutral Std Reg', sans-serif!important;
+text-transform: none;
+font-weight: normal!important;
+}
+
+
+
+@media screen and (max-width: 1160px) {
+	nav#site-navigation {
+		grid-template-columns: 30% 40% 0% 30%;
+	}
+	.nav-left.navbar-menu.mobile {
+		display: flex;
+	}
+	.nav-left.navbar-menu.desktop {
+		display: none;
+	}
+	i.fal.fa-bars {
+		color: #000;
+		font-size: 20px;
+	}
+}
+
+div#nav-menu.mobile-menu .nav-right {
+    padding: 0 10px;
+}
+
+#nav-menu .sub-menu .sub-menu a {
+    padding-left: 20px;
+}
+
+#nav-menu a {
+	font-size: 18px;
+}
+
+#nav-menu .sub-menu a {
+	font-size: 14px;
 }
