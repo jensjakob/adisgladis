@@ -4,7 +4,7 @@ Template: supernova-theme
 Author: Jakob Nanneson, Tofta Webbyrå
 Author URI: http://toftawebb.se	
 GitHub Theme URI: https://github.com/jensjakob/adisgladis
-Version: 0.0.4
+Version: 0.1.0
 */
 
 @font-face {
@@ -100,3 +100,72 @@ header#header nav#site-navigation .menu-item a {
 	 text-align:left;
 	 margin-bottom: 1em;
  }
+
+ header#header nav#site-navigation .menu-item a,
+h1, h2, h3,
+button
+{
+    font-family: 'Noe Display Regular', serif!important;
+	color: black;
+	text-transform: none;
+	font-weight: normal!important;
+}
+
+h4, h5, h6,
+div, p, span
+{
+    font-family: 'Neutral Std Reg', sans-serif!important;
+	text-transform: none;
+	font-weight: normal!important;
+}
+
+button,
+.woocommerce ul.products li.product h2, .woocommerce-page ul.products li.product h2{
+	text-transform: none!important;
+}
+
+.single.woocommerce #content .product .product-open div.summary form.cart button.button, .single.woocommerce-page #content .product .product-open div.summary form.cart button.button {
+	background-color: #ffc600;
+	color: black;
+	font-size: 18px;
+}
+
+.topbar {
+	display: block;
+	text-align: center;
+}
+
+#nav-menu h3 {
+	display: none!important;
+}
+#nav-menu {
+	text-align: left!important;
+}
+
+.slide-cart {
+	max-width: 100%;
+}
+
+#colophon {
+	display:none;
+}
+
+form.woocommerce-product-search {
+    width: 100%;
+}
+
+header#header .nav-search.open {
+	  max-width: 90%;
+}
+
+header#header .nav-search.open .woocommerce-product-search input[type="search"] {
+	width: 100%;
+}
+
+.nav-center.branding img {
+	vertical-align: middle;
+}
+
+.product_meta {
+    font-size: 12px;
+}
