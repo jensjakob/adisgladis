@@ -4,7 +4,7 @@ Template: supernova-theme
 Author: Jakob Nanneson, Tofta Webbyrå
 Author URI: http://toftawebb.se	
 GitHub Theme URI: https://github.com/jensjakob/adisgladis
-Version: 0.1.5
+Version: 0.1.7
 */
 
 @font-face {
@@ -101,7 +101,8 @@ header#header nav#site-navigation .menu-item a {
 	 margin-bottom: 1em;
  }
 
- header#header nav#site-navigation .menu-item a,
+h1.product_title.entry-title, .content.entry-content h1, h1.title.entry-title, h1.product_title.entry-title a, .content.entry-content h1 a, h1.title.entry-title a,
+header#header nav#site-navigation .menu-item a,
 h1, h2, h3,
 button
 {
@@ -135,11 +136,11 @@ button,
 	text-align: center;
 }
 
-#nav-menu h3 {
+div#nav-menu.mobile-menu h3 {
 	display: none!important;
 }
-#nav-menu {
-	text-align: left!important;
+div#nav-menu.mobile-menu {
+	text-align: left;
 }
 
 .slide-cart {
@@ -155,7 +156,7 @@ form.woocommerce-product-search {
 }
 
 header#header .nav-search.open {
-	  max-width: 90%;
+	max-width: 90%;
 }
 
 header#header .nav-search.open .woocommerce-product-search input[type="search"] {
@@ -168,4 +169,9 @@ header#header .nav-search.open .woocommerce-product-search input[type="search"] 
 
 .product_meta {
     font-size: 12px;
+}
+
+.archive.woocommerce .woocommerce-products-header .category-header h1, .tax-product_cat.woocommerce .woocommerce-products-header .category-header h1 {
+	text-transform: none;
+	color: black;
 }
