@@ -11,9 +11,17 @@ function my_scripts_and_styles(){
 }
 add_action( 'wp_enqueue_scripts', 'my_scripts_and_styles', 9999);
 
+function widget_before_shop_init() {
+	register_sidebar( array(
+		'name'          => 'Widget before shop',
+		'id'            => 'widget_before_shop',
+	) );
+}
+add_action( 'widgets_init', 'widget_before_shop_init' );
+
 function widget_before_shop() {
 	echo '<div id="widget-before-shop">';
-	dynamic_sidebar( 'widget-before-shop' );
+	dynamic_sidebar( 'widget_before_shop' );
 	echo '</div>';
 }
 add_action( 'woocommerce_before_shop_loop', 'widget_before_shop' );
