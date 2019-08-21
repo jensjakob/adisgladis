@@ -1,9 +1,15 @@
 <?php
 
-function load_css_and_js() {
-	wp_enqueue_style( 'style', get_stylesheet_uri() );
+// function load_css_and_js() {
+// 	wp_enqueue_style( 'style', get_stylesheet_uri() );
+// }
+// add_action( 'wp_enqueue_scripts', 'load_css_and_js', 1001 );
+
+function my_scripts_and_styles(){
+	$cache_buster = wp_get_theme()->get('Version');
+	wp_enqueue_style( 'adisgladis-style', get_stylesheet_uri(), array(), $cache_buster );
 }
-add_action( 'wp_enqueue_scripts', 'load_css_and_js', 1001 );
+add_action( 'wp_enqueue_scripts', 'my_scripts_and_styles', 9999);
 
 function child_remove_parent_function() {
 	remove_action( 'woocommerce_archive_description', 'woocommerce_category_image', 0 );
