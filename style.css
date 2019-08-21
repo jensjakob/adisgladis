@@ -4,7 +4,7 @@ Template: supernova-theme
 Author: Jakob Nanneson, Tofta Webbyrå
 Author URI: http://toftawebb.se	
 GitHub Theme URI: https://github.com/jensjakob/adisgladis
-Version: 0.1.12
+Version: 0.2.0
 */
 
 @font-face {
@@ -46,7 +46,8 @@ button,
 h4, h5, h6,
 div, p,
 header#header nav#site-navigation .sub-menu .menu-item a,
-#nav-menu .sub-menu a
+#nav-menu .sub-menu a,
+.price
 {
 	font-family: 'Neutral Std Reg', sans-serif!important;
 	text-transform: none;

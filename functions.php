@@ -11,6 +11,13 @@ function my_scripts_and_styles(){
 }
 add_action( 'wp_enqueue_scripts', 'my_scripts_and_styles', 9999);
 
+function widget_before_shop() {
+	echo '<div id="widget-before-shop">';
+	dynamic_sidebar( 'widget-before-shop' );
+	echo '</div>';
+}
+add_action( 'woocommerce_before_shop_loop', 'widget_before_shop' );
+
 function child_remove_parent_function() {
 	remove_action( 'woocommerce_archive_description', 'woocommerce_category_image', 0 );
 }
