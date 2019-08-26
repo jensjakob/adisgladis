@@ -4,8 +4,13 @@ Template: supernova-theme
 Author: Jakob Nanneson, Tofta Webbyrå
 Author URI: http://toftawebb.se	
 GitHub Theme URI: https://github.com/jensjakob/adisgladis
-Version: 0.3.5
+Version: 0.3.6
 */
+
+header#header nav#site-navigation:hover {
+	background-color: #ffc600;
+	box-shadow: none;
+}
 
 @font-face {
 	font-family: 'Neutral Std Reg';
