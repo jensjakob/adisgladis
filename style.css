@@ -236,9 +236,9 @@ div#nav-menu.mobile-menu h3 i.fal.fa-times.mobile-nav {
 	top: 15px;
 }
 
-
 #widget-before-shop .widget {
 	max-width: 100%;
+	margin: 1em 0;
 }
 
 #widget-before-shop a {
@@ -310,26 +310,43 @@ div#nav-menu.mobile-menu h3 i.fal.fa-times.mobile-nav {
 
 .archive.woocommerce .woocommerce-products-header .category-header {
     background-color: white;
-    padding: 40px 10px 10px 10px;
+    padding: 0 10px;
 	max-width: 1440px;
-	margin: 0 auto;
+	margin: 10px auto 10px auto;
+}
+
+.archive.woocommerce .woocommerce-products-header .term-description {
+	padding: 0 10px;
+	text-align: left;
+	max-width: 1440px;
+	margin: 10px auto 10px auto;
+}
+
+@media screen and (min-width: 768px) {
+	.archive.woocommerce .woocommerce-products-header .category-header {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	.archive.woocommerce .woocommerce-products-header .term-description {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	
+}
+
+@media screen and (min-width: 1440px) {
+	.archive.woocommerce .woocommerce-products-header .category-header {
+		padding: 0;
+	}
+	.archive.woocommerce .woocommerce-products-header .term-description {
+		padding: 0;
+	}
+	
 }
 
 .archive.woocommerce .woocommerce-products-header .category-header h1 {
 	font-size: 24px;
 	text-align: left;
-}
-
-@media screen and (min-width: 768px) {
-	.archive.woocommerce .woocommerce-products-header .category-header {
-		padding: 40px 20px 10px 20px;
-	}
-}
-
-@media screen and (min-width: 1440px) {
-	.archive.woocommerce .woocommerce-products-header .category-header {
-		padding: 40px 0 10px 0;
-	}
 }
 
 .reset_variations {
@@ -387,10 +404,7 @@ div#nav-menu.mobile-menu ul.nav-right .menu-item {
 	border-top: 1px solid black;
 }
 
-.archive.woocommerce .woocommerce-products-header .term-description, .tax-product_cat.woocommerce .woocommerce-products-header .term-description {
-	padding: 0 20px;
-	text-align: left;
-}
+
 .product img {
     border: 1px solid #ffc600;
 }
@@ -408,6 +422,7 @@ div#nav-menu.mobile-menu ul.nav-right .menu-item {
 
 .woocommerce div.product div.images .flex-control-thumbs li {
 	padding-right: 10px;
+	padding-bottom: 10px;
 }
 
 #widget-before-shop a {
