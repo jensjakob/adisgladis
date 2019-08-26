@@ -4,7 +4,7 @@ Template: supernova-theme
 Author: Jakob Nanneson, Tofta Webbyrå
 Author URI: http://toftawebb.se	
 GitHub Theme URI: https://github.com/jensjakob/adisgladis
-Version: 0.3.2
+Version: 0.3.3
 */
 
 @font-face {
@@ -237,60 +237,34 @@ div#nav-menu.mobile-menu h3 i.fal.fa-times.mobile-nav {
 }
 
 
-#widget-before-shop .widget {
-	display: flex;
-	flex-wrap: wrap;
-	width: 1440px;
-	max-width: 100%;
-	padding: 1em 0 1em 0;
-	margin-bottom: 0;
-}
-
-#widget-before-shop .product-categories {
-	width: 100%;
-}
-
-
-
 #widget-before-shop a {
 	color: black;
 }
 
-#widget-before-shop .widget {
-	padding-right: 10px;
-	padding-left: 10px;
+#widget-before-shop .product-categories {
+	margin-right: 10px;
+	margin-left: 10px;
+	display: grid;
+	grid-template-columns: 1fr 1fr !important;
+	grid-gap: 10px;
 }
 
 #widget-before-shop .product-categories .cat-item {
-	display: inline-block;
-	margin: 0;
-	padding: 0.3em 0;
-	width: 22.05%;
+	width: 100%;
 }
 
 @media screen and (max-width: 767px) {
 
-	#widget-before-shop .widget {
-		padding-right: 20px;
-		padding-left: 20px;
+	#widget-before-shop .product-categories {
+		margin-right: 20px;
+		margin-left: 20px;
 	}
 
-	#widget-before-shop .product-categories .cat-item {
-		margin: 0;
-		padding: 0.3em 0;
-		width: 48%;
-		float: left;
-	}
-	
-	#widget-before-shop .product-categories .cat-item:nth-child(2n) {
-		float: right;
-	}
 }
 @media screen and (max-width: 1440px) {
 
-	#widget-before-shop .widget {
-		padding-right: 0;
-		padding-left: 0;
+	#widget-before-shop .product-categories {
+		margin: 0 auto;
 	}
 	
 }

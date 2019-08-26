@@ -20,9 +20,9 @@ function widget_before_shop_init() {
 add_action( 'widgets_init', 'widget_before_shop_init' );
 
 function widget_before_shop() {
-	echo '<div id="widget-before-shop">';
+	echo '<ul id="widget-before-shop">';
 	dynamic_sidebar( 'widget_before_shop' );
-	echo '</div>';
+	echo '</ul>';
 }
 add_action( 'woocommerce_before_shop_loop', 'widget_before_shop' );
 
