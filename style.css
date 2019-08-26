@@ -4,7 +4,7 @@ Template: supernova-theme
 Author: Jakob Nanneson, Tofta Webbyrå
 Author URI: http://toftawebb.se	
 GitHub Theme URI: https://github.com/jensjakob/adisgladis
-Version: 0.3.1
+Version: 0.3.2
 */
 
 @font-face {
@@ -250,6 +250,17 @@ div#nav-menu.mobile-menu h3 i.fal.fa-times.mobile-nav {
 	width: 100%;
 }
 
+
+
+#widget-before-shop a {
+	color: black;
+}
+
+#widget-before-shop .widget {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
 #widget-before-shop .product-categories .cat-item {
 	display: inline-block;
 	margin: 0;
@@ -257,16 +268,13 @@ div#nav-menu.mobile-menu h3 i.fal.fa-times.mobile-nav {
 	width: 22.05%;
 }
 
-#widget-before-shop a {
-	color: black;
-}
-
-#widget-before-shop .widget {
-	padding-right: 20px;
-	padding-left: 20px;
-}
-
 @media screen and (max-width: 767px) {
+
+	#widget-before-shop .widget {
+		padding-right: 20px;
+		padding-left: 20px;
+	}
+
 	#widget-before-shop .product-categories .cat-item {
 		margin: 0;
 		padding: 0.3em 0;
@@ -277,6 +285,14 @@ div#nav-menu.mobile-menu h3 i.fal.fa-times.mobile-nav {
 	#widget-before-shop .product-categories .cat-item:nth-child(2n) {
 		float: right;
 	}
+}
+@media screen and (max-width: 1440px) {
+
+	#widget-before-shop .widget {
+		padding-right: 0;
+		padding-left: 0;
+	}
+	
 }
 
 .filter-container {
@@ -314,11 +330,26 @@ div#nav-menu.mobile-menu h3 i.fal.fa-times.mobile-nav {
 
 .archive.woocommerce .woocommerce-products-header .category-header {
     background-color: white;
-    padding: 40px 20px 10px 20px;
+    padding: 40px 10px 10px 10px;
+	max-width: 1440px;
+	margin: 0 auto;
 }
 
 .archive.woocommerce .woocommerce-products-header .category-header h1 {
 	font-size: 24px;
+	text-align: left;
+}
+
+@media screen and (max-width: 767px) {
+	.archive.woocommerce .woocommerce-products-header .category-header {
+		padding: 40px 20px 10px 20px;
+	}
+}
+
+@media screen and (max-width: 1440px) {
+	.archive.woocommerce .woocommerce-products-header .category-header {
+		padding: 40px 0 10px 0;
+	}
 }
 
 .reset_variations {
@@ -367,9 +398,6 @@ div#nav-menu.mobile-menu h3,
 	background-color: #ffc600;
 }
 
-.archive.woocommerce .woocommerce-products-header .category-header h1 {
-	text-align: left;
-}
 
 div#nav-menu.mobile-menu ul.nav-left .menu-item {
 	border-top: none;
@@ -385,18 +413,6 @@ div#nav-menu.mobile-menu ul.nav-right .menu-item {
 }
 .product img {
     border: 1px solid #ffc600;
-}
-
-
-#widget-before-shop .product-categories .cat-item {
-	margin: 0;
-	padding: 0.3em 0;
-	width: 48%;
-	float: left;
-}
-
-#widget-before-shop .product-categories .cat-item:nth-child(2n) {
-	float: right;
 }
 
 
@@ -418,7 +434,3 @@ div#nav-menu.mobile-menu ul.nav-right .menu-item {
 	text-decoration: underline;
 }
 
-.archive.woocommerce .woocommerce-products-header .category-header {
-	max-width: 1440px;
-	margin: 0 auto;
-}
