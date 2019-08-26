@@ -4,7 +4,7 @@ Template: supernova-theme
 Author: Jakob Nanneson, Tofta Webbyrå
 Author URI: http://toftawebb.se	
 GitHub Theme URI: https://github.com/jensjakob/adisgladis
-Version: 0.3.4
+Version: 0.3.5
 */
 
 @font-face {
@@ -249,7 +249,7 @@ div#nav-menu.mobile-menu h3 i.fal.fa-times.mobile-nav {
 	margin-right: 10px;
 	margin-left: 10px;
 	display: grid;
-	grid-template-columns: 1fr 1fr !important;
+	grid-template-columns: 1fr 1fr;
 	grid-gap: 10px;
 }
 
@@ -257,7 +257,7 @@ div#nav-menu.mobile-menu h3 i.fal.fa-times.mobile-nav {
 	width: 100%;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
 
 	#widget-before-shop .product-categories {
 		margin-right: 20px;
@@ -320,7 +320,7 @@ div#nav-menu.mobile-menu h3 i.fal.fa-times.mobile-nav {
 	text-align: left;
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 768px) {
 	.archive.woocommerce .woocommerce-products-header .category-header {
 		padding: 40px 20px 10px 20px;
 	}
