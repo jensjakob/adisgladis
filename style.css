@@ -4,7 +4,7 @@ Template: supernova-theme
 Author: Jakob Nanneson, Tofta Webbyrå
 Author URI: http://toftawebb.se	
 GitHub Theme URI: https://github.com/jensjakob/adisgladis
-Version: 0.3.0
+Version: 0.3.1
 */
 
 @font-face {
@@ -207,15 +207,10 @@ font-weight: normal!important;
   div#nav-menu.mobile-menu ul.nav-left, div#nav-menu.mobile-menu .nav-right { display: flex; flex-direction: column; position: relative; top: 0; box-shadow: none; padding: 0 20px; }
   div#nav-menu.mobile-menu ul.nav-left .menu-item, div#nav-menu.mobile-menu .nav-right .menu-item { min-height: 0; padding: 15px; border-top: 1px solid #efefef; font-weight: bold; position: relative; }
   div#nav-menu.mobile-menu ul.nav-left .menu-item a, div#nav-menu.mobile-menu .nav-right .menu-item a { width: 100%; margin: 0 auto; }
-  div#nav-menu.mobile-menu ul.nav-left .menu-item.menu-item-has-children:after, div#nav-menu.mobile-menu .nav-right .menu-item.menu-item-has-children:after { font-family: "Font Awesome 5 Pro"; content: "\f107"; padding: 15px 20px; position: absolute; right: 0; top: 0; width: 50px; height: 50px; }
+  /* div#nav-menu.mobile-menu ul.nav-left .menu-item.menu-item-has-children:after, div#nav-menu.mobile-menu .nav-right .menu-item.menu-item-has-children:after { font-family: "Font Awesome 5 Pro"; content: "\f107"; padding: 15px 20px; position: absolute; right: 0; top: 0; width: 50px; height: 50px; } */
   div#nav-menu.mobile-menu ul.nav-left .menu-item .sub-menu, div#nav-menu.mobile-menu .nav-right .menu-item .sub-menu { display: none; opacity: 0; transition: opacity 1s ease-out; }
   div#nav-menu.mobile-menu .navbar-menu { display: flex; }
   div#nav-menu.mobile-menu .nav-right.navbar-menu.mobile ul.nav-right { position: relative; top: inherit; color: #000; left: 0; right: auto; display: flex; box-shadow: none; }
-
-
-div#nav-menu.mobile-menu .nav-right {
-    padding: 0 10px;
-}
 
 #nav-menu .sub-menu .sub-menu a {
     padding-left: 20px;
@@ -273,7 +268,14 @@ div#nav-menu.mobile-menu h3 i.fal.fa-times.mobile-nav {
 
 @media screen and (max-width: 767px) {
 	#widget-before-shop .product-categories .cat-item {
-	  width: 44%;
+		margin: 0;
+		padding: 0.3em 0;
+		width: 48%;
+		float: left;
+	}
+	
+	#widget-before-shop .product-categories .cat-item:nth-child(2n) {
+		float: right;
 	}
 }
 
@@ -380,4 +382,43 @@ div#nav-menu.mobile-menu ul.nav-right .menu-item {
 .archive.woocommerce .woocommerce-products-header .term-description, .tax-product_cat.woocommerce .woocommerce-products-header .term-description {
 	padding: 0 20px;
 	text-align: left;
+}
+.product img {
+    border: 1px solid #ffc600;
+}
+
+
+#widget-before-shop .product-categories .cat-item {
+	margin: 0;
+	padding: 0.3em 0;
+	width: 48%;
+	float: left;
+}
+
+#widget-before-shop .product-categories .cat-item:nth-child(2n) {
+	float: right;
+}
+
+
+.single.woocommerce #content .product .product-open .woocommerce-product-gallery.woocommerce-product-gallery--with-images.woocommerce-product-gallery--columns-4.images, .single.woocommerce-page #content .product .product-open .woocommerce-product-gallery.woocommerce-product-gallery--with-images.woocommerce-product-gallery--columns-4.images {
+    padding: 20px 20px 0 20px;
+    margin-bottom: 0;
+}
+
+
+.woocommerce div.product div.images .flex-control-thumbs {
+	padding-top: 10px;
+}
+
+.woocommerce div.product div.images .flex-control-thumbs li {
+	padding-right: 10px;
+}
+
+#widget-before-shop a {
+	text-decoration: underline;
+}
+
+.archive.woocommerce .woocommerce-products-header .category-header {
+	max-width: 1440px;
+	margin: 0 auto;
 }
