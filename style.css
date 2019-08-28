@@ -4,7 +4,7 @@ Template: supernova-theme
 Author: Jakob Nanneson, Tofta Webbyrå
 Author URI: http://toftawebb.se	
 GitHub Theme URI: https://github.com/jensjakob/adisgladis
-Version: 0.3.6
+Version: 0.4.0
 */
 
 header#header nav#site-navigation:hover {
@@ -40,7 +40,8 @@ h1.product_title.entry-title, .content.entry-content h1, h1.title.entry-title, h
 header#header nav#site-navigation .menu-item a,
 h1, h2, h3,
 button,
-#nav-menu a
+#nav-menu a,
+.price
 {
     font-family: 'Noe Display Regular', serif!important;
 	color: black;
@@ -51,8 +52,7 @@ button,
 h4, h5, h6,
 div, p,
 header#header nav#site-navigation .sub-menu .menu-item a,
-#nav-menu .sub-menu a,
-.price
+#nav-menu .sub-menu a
 {
 	font-family: 'Neutral Std Reg', sans-serif!important;
 	text-transform: none;
@@ -64,46 +64,6 @@ header#header nav#site-navigation .sub-menu .menu-item a,
 	text-align: center;
 }
 
-/* clean menu:
- * 
- * uncategorized 
- * material
- * plastbanta
- * */
- .menu-item-100437835, 
- .menu-item-1004381308,
- .menu-item-1004383295 {
-	 display: none!important;
- }
- /*remove dam herr*/
- #menu-item-1005390741741354,
- #menu-item-1005390744747358,
- #menu-item-1005390741740353,
- #menu-item-1005390744748357,
- #menu-item-1005390752773375,
- #menu-item-1005390752774376,
- #menu-item-1005390753767369,
- #menu-item-1005390753768368,
- #menu-item-1005390755773373,
- #menu-item-1005390755774372,
- #menu-item-1005390763800385,
- #menu-item-1005390763801386,
- #menu-item-100539980674388,
- #menu-item-10053998067578,
- #menu-item-1005390767806395,
- #menu-item-1005390767807394,
- #menu-item-1005390768808397,
- #menu-item-1005390768809396,
- #menu-item-1005390774823404,
- #menu-item-1005390774824403,
- #menu-item-1005390784857428,
- #menu-item-1005390784858427,
- #menu-item-1005390789866432,
- #menu-item-1005390789867431,
- #menu-item-1005390790870435,
- #menu-item-1005390790871434 {
-   display: none!important;
- }
  ul.children {
 	 padding-left: 1em;
  }
@@ -246,28 +206,28 @@ div#nav-menu.mobile-menu h3 i.fal.fa-times.mobile-nav {
 	margin: 1em 0;
 }
 
-#widget-before-shop a {
-	color: black;
-}
-
 #widget-before-shop .product-categories {
-	margin-right: 10px;
-	margin-left: 10px;
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap: 10px;
+	margin-right: 0;
+	margin-left: 0;
+	display: block;
 }
 
-#widget-before-shop .product-categories .cat-item {
-	width: 100%;
+#widget-before-shop .cat-item {
+	display: inline;
+	line-height: 26px
+}
+
+#widget-before-shop .cat-item a {
+	padding: 5px 10px;
+	white-space: nowrap;
+	color: black;
 }
 
 @media screen and (min-width: 768px) {
 
 	#widget-before-shop .product-categories {
-		margin-right: 20px;
-		margin-left: 20px;
-		grid-template-columns: 1fr 1fr 1fr 1fr;
+		margin-right: 10px;
+		margin-left: 10px;
 	}
 
 }
@@ -434,3 +394,7 @@ div#nav-menu.mobile-menu ul.nav-right .menu-item {
 	text-decoration: underline;
 }
 
+footer#colophon a:hover {
+	color: black;
+	text-decoration: underline;
+}

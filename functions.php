@@ -24,7 +24,7 @@ function widget_before_shop() {
 	dynamic_sidebar( 'widget_before_shop' );
 	echo '</ul>';
 }
-add_action( 'woocommerce_before_shop_loop', 'widget_before_shop' );
+add_action( 'woocommerce_archive_description', 'widget_before_shop' );
 
 function child_remove_parent_function() {
 	remove_action( 'woocommerce_archive_description', 'woocommerce_category_image', 0 );
