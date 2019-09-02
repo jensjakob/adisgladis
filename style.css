@@ -4,7 +4,7 @@ Template: supernova-theme
 Author: Jakob Nanneson, Tofta Webbyrå
 Author URI: http://toftawebb.se	
 GitHub Theme URI: https://github.com/jensjakob/adisgladis
-Version: 0.5.2
+Version: 0.5.3
 */
 
 header#header nav#site-navigation:hover {
@@ -141,41 +141,6 @@ font-family: 'Neutral Std Reg', sans-serif!important;
 text-transform: none;
 font-weight: normal!important;
 }
-
-
-/* show hamburger */
-@media screen and (max-width: 940px) {
-	nav#site-navigation {
-		grid-template-columns: 30% 40% 0% 30%;
-	}
-	.nav-left.navbar-menu.mobile {
-		display: flex;
-	}
-	.nav-left.navbar-menu.desktop {
-		display: none;
-	}
-	i.fal.fa-bars {
-		color: #000;
-		font-size: 20px;
-	}
-}
-
-
-  div#nav-menu.mobile-menu { text-align: center; z-index: 100; overflow-x: scroll; }
-  div#nav-menu.mobile-menu h3 { font-size: 22px; font-weight: bold; padding: 0 0 10px 0; display: flex; align-items: center; justify-content: center; }
-  div#nav-menu.mobile-menu h3 i.fal.fa-times.mobile-nav { float: right; font-weight: 500; font-size: 20px; line-height: 24px; position: absolute !important; right: 20px; top: 5px; }
-  div#nav-menu.mobile-menu h3 i.fal.fa-times.mobile-nav:hover { cursor: pointer; }
-  div#nav-menu.mobile-menu ul.nav-menu li.menu-item.menu-item-has-children { padding: 0; }
-  div#nav-menu.mobile-menu ul.nav-menu li.menu-item.menu-item-has-children > a { display: block; padding: 15px; }
-  div#nav-menu.mobile-menu ul.nav-menu li.menu-item.menu-item-has-children:hover > .sub-menu, div#nav-menu.mobile-menu ul.nav-menu li.menu-item.menu-item-has-children:focus > .sub-menu { display: block; opacity: 1; }
-  div#nav-menu.mobile-menu ul.nav-menu li.menu-item.menu-item-has-children:hover, div#nav-menu.mobile-menu ul.nav-menu li.menu-item.menu-item-has-children:focus { background: rgba(0, 0, 0, 0.02); }
-  div#nav-menu.mobile-menu ul.nav-left, div#nav-menu.mobile-menu .nav-right { display: flex; flex-direction: column; position: relative; top: 0; box-shadow: none; padding: 0 20px; }
-  div#nav-menu.mobile-menu ul.nav-left .menu-item, div#nav-menu.mobile-menu .nav-right .menu-item { min-height: 0; padding: 15px; border-top: 1px solid #efefef; font-weight: bold; position: relative; }
-  div#nav-menu.mobile-menu ul.nav-left .menu-item a, div#nav-menu.mobile-menu .nav-right .menu-item a { width: 100%; margin: 0 auto; }
-  /* div#nav-menu.mobile-menu ul.nav-left .menu-item.menu-item-has-children:after, div#nav-menu.mobile-menu .nav-right .menu-item.menu-item-has-children:after { font-family: "Font Awesome 5 Pro"; content: "\f107"; padding: 15px 20px; position: absolute; right: 0; top: 0; width: 50px; height: 50px; } */
-  div#nav-menu.mobile-menu ul.nav-left .menu-item .sub-menu, div#nav-menu.mobile-menu .nav-right .menu-item .sub-menu { display: none; opacity: 0; transition: opacity 1s ease-out; }
-  div#nav-menu.mobile-menu .navbar-menu { display: flex; }
-  div#nav-menu.mobile-menu .nav-right.navbar-menu.mobile ul.nav-right { position: relative; top: inherit; color: #000; left: 0; right: auto; display: flex; box-shadow: none; }
 
 #nav-menu .sub-menu .sub-menu a {
     padding-left: 20px;
