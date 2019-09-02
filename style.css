@@ -339,6 +339,9 @@ div#nav-menu.mobile-menu ul.nav-right .menu-item {
     border: 1px solid #ffc600;
 }
 
+#product-description img {
+	border: none;
+}
 
 .single.woocommerce #content .product .product-open .woocommerce-product-gallery.woocommerce-product-gallery--with-images.woocommerce-product-gallery--columns-4.images, .single.woocommerce-page #content .product .product-open .woocommerce-product-gallery.woocommerce-product-gallery--with-images.woocommerce-product-gallery--columns-4.images {
     padding: 20px 20px 0 20px;
@@ -400,4 +403,12 @@ footer#colophon a:hover {
     font-weight: normal;
     text-decoration: none;
     margin-left: 5px;
+}
+
+.woocommerce nav.woocommerce-pagination ul li a {
+	color: black;
+}
+
+.woocommerce-message .wc-forward {
+	display: none;
 }
