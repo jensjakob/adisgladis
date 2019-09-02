@@ -404,3 +404,7 @@ footer#colophon a:hover {
 	border: 1px solid gray;
 	cursor: not-allowed;
 }
+
+.reset_variations {
+	display: none!important;
+}
