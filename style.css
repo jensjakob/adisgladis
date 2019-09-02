@@ -387,6 +387,10 @@ footer#colophon a:hover {
     padding: 6px;
 }
 
+.woocommerce ul.products li.product .onsale {
+	margin: 0;
+}
+
 .woocommerce-breadcrumb {
 	display: none;
 }
