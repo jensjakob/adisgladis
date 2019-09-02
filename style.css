@@ -394,3 +394,10 @@ footer#colophon a:hover {
 .woocommerce-breadcrumb {
 	display: none;
 }
+
+.woocommerce ul.products li.product .price ins {
+    color: red;
+    font-weight: normal;
+    text-decoration: none;
+    margin-left: 5px;
+}
