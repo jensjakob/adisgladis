@@ -1,13 +1,9 @@
 <?php
 
-// function load_css_and_js() {
-// 	wp_enqueue_style( 'style', get_stylesheet_uri() );
-// }
-// add_action( 'wp_enqueue_scripts', 'load_css_and_js', 1001 );
-
 function my_scripts_and_styles(){
 	$cache_buster = wp_get_theme()->get('Version');
 	wp_enqueue_style( 'adisgladis-style', get_stylesheet_uri(), array(), $cache_buster );
+	wp_enqueue_script( 'adisgladis-script', get_stylesheet_directory_uri() . '/script.js', array(), $cache_buster );
 }
 add_action( 'wp_enqueue_scripts', 'my_scripts_and_styles', 9999);
 
