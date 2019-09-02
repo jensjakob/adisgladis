@@ -4,7 +4,7 @@ Template: supernova-theme
 Author: Jakob Nanneson, Tofta Webbyrå
 Author URI: http://toftawebb.se	
 GitHub Theme URI: https://github.com/jensjakob/adisgladis
-Version: 0.4.0
+Version: 0.5.0
 */
 
 header#header nav#site-navigation:hover {
@@ -397,4 +397,10 @@ div#nav-menu.mobile-menu ul.nav-right .menu-item {
 footer#colophon a:hover {
 	color: black;
 	text-decoration: underline;
+}
+
+.woocommerce div.product .out-of-stock {
+    color: gray;
+	border: 1px solid gray;
+	cursor: not-allowed;
 }
