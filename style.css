@@ -4,7 +4,7 @@ Template: supernova-theme
 Author: Jakob Nanneson, Tofta Webbyrå
 Author URI: http://toftawebb.se	
 GitHub Theme URI: https://github.com/jensjakob/adisgladis
-Version: 0.6.0
+Version: 0.6.1
 */
 
 header#header nav#site-navigation:hover {
@@ -334,14 +334,17 @@ div#nav-menu.mobile-menu ul.nav-right .menu-item {
 	border-top: 1px solid black;
 }
 
-
-.product img {
+.woocommerce-product-gallery .flex-viewport {
     border: 1px solid #ffc600;
 }
 
-#product-description img {
-	border: none;
+.products img {
+    border: 1px solid #ffc600;
 }
+
+/* #product-description img {
+	border: none;
+} */
 
 .single.woocommerce #content .product .product-open .woocommerce-product-gallery.woocommerce-product-gallery--with-images.woocommerce-product-gallery--columns-4.images, .single.woocommerce-page #content .product .product-open .woocommerce-product-gallery.woocommerce-product-gallery--with-images.woocommerce-product-gallery--columns-4.images {
     padding: 20px 20px 0 20px;
@@ -378,16 +381,20 @@ footer#colophon a:hover {
 	display: none!important;
 }
 
-.woocommerce ul.products li.product span.onsale, .woocommerce-page ul.products li.product span.onsale {
+.woocommerce ul.products li.product span.onsale,
+.woocommerce-page ul.products li.product span.onsale {
     opacity: 1;
     left: 0;
     top: 0;
     border-radius: unset;
-    height: auto;
+	height: auto;
+	min-height: unset;
+    min-width: unset;
+    width: fit-content;
 }
 
 .woocommerce span.onsale {
-    padding: 6px;
+    padding: 6px 10px;
 }
 
 .woocommerce ul.products li.product .onsale {
@@ -398,6 +405,7 @@ footer#colophon a:hover {
 	display: none;
 }
 
+.woocommerce div.product p.price ins,
 .woocommerce ul.products li.product .price ins {
     color: red;
     font-weight: normal;
@@ -410,5 +418,37 @@ footer#colophon a:hover {
 }
 
 .woocommerce-message .wc-forward {
-	display: none;
+	display: none!important;
+}
+
+.variations .label {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.single.woocommerce #content .product .product-open div.summary .onsale,
+.single.woocommerce-page #content .product .product-open div.summary .onsale {
+    position: unset;
+    width: unset;
+    height: unset;
+    background: transparent;
+    color: black;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    line-height: 14px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    align-items: center;
+    display: grid;
+    left: auto;
+    top: 13px;
+    opacity: 1;
+    display: block;
+    background-color: unset;
+    text-align: left;
+    padding: 0;
+    min-height: unset;
+    max-height: unset;
 }
