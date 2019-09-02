@@ -4,7 +4,7 @@ Template: supernova-theme
 Author: Jakob Nanneson, Tofta Webbyrå
 Author URI: http://toftawebb.se	
 GitHub Theme URI: https://github.com/jensjakob/adisgladis
-Version: 0.5.0
+Version: 0.5.1
 */
 
 header#header nav#site-navigation:hover {
@@ -143,8 +143,8 @@ font-weight: normal!important;
 }
 
 
-
-@media screen and (max-width: 1160px) {
+/* show hamburger */
+@media screen and (max-width: 940px) {
 	nav#site-navigation {
 		grid-template-columns: 30% 40% 0% 30%;
 	}
