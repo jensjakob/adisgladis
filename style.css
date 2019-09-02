@@ -4,7 +4,7 @@ Template: supernova-theme
 Author: Jakob Nanneson, Tofta Webbyrå
 Author URI: http://toftawebb.se	
 GitHub Theme URI: https://github.com/jensjakob/adisgladis
-Version: 0.5.1
+Version: 0.5.2
 */
 
 header#header nav#site-navigation:hover {
@@ -354,12 +354,11 @@ footer#colophon h2.widget-title {
 	padding-right: 0!important;
 	padding-left: 0!important;
 }
+
 div#nav-menu.mobile-menu h3,
-.nav-menu.nav-left,
-.nav-menu.nav-right {
+div#nav-menu {
 	background-color: #ffc600;
 }
-
 
 div#nav-menu.mobile-menu ul.nav-left .menu-item {
 	border-top: none;
