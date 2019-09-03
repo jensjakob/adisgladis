@@ -4,7 +4,7 @@ Template: supernova-theme
 Author: Jakob Nanneson, Tofta Webbyrå
 Author URI: http://toftawebb.se	
 GitHub Theme URI: https://github.com/jensjakob/adisgladis
-Version: 0.6.1
+Version: 0.7.0
 */
 
 header#header nav#site-navigation:hover {
@@ -370,9 +370,9 @@ footer#colophon a:hover {
 	text-decoration: underline;
 }
 
-.woocommerce div.product .out-of-stock {
-    color: gray;
-	border: 1px solid gray;
+.tawcvs-swatches .out-of-stock {
+    color: silver;
+	border: 1px solid silver;
 	cursor: not-allowed;
 	text-decoration: line-through;
 }
@@ -390,7 +390,7 @@ footer#colophon a:hover {
 	height: auto;
 	min-height: unset;
     min-width: unset;
-    width: fit-content;
+    width: 60px;
 }
 
 .woocommerce span.onsale {
@@ -428,6 +428,7 @@ footer#colophon a:hover {
 
 .single.woocommerce #content .product .product-open div.summary .onsale,
 .single.woocommerce-page #content .product .product-open div.summary .onsale {
+	display: none;
     position: unset;
     width: unset;
     height: unset;
@@ -450,5 +451,22 @@ footer#colophon a:hover {
     text-align: left;
     padding: 0;
     min-height: unset;
-    max-height: unset;
+	max-height: unset;
+}
+
+.single.woocommerce #content .product .product-open div.summary form.cart button.button:hover,
+.single.woocommerce-page #content .product .product-open div.summary form.cart button.button:hover {
+	background-color: #ffc600;
+    border: 2px solid #ffc600;
+    color: black;
+}
+
+/* Safari Mac fix */
+div#nav-menu.mobile-menu ul.nav-left,
+div#nav-menu.mobile-menu .nav-right {
+	background-color: #ffc600;
+}
+
+.woocommerce div.product p.stock {
+	margin-bottom: 2em;
 }
